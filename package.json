@@ -1,0 +1,27 @@
+{
+  "name": "sandbox-lecture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melikhov-dev/sandbox-lecture.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melikhov-dev/sandbox-lecture/issues"
+  },
+  "homepage": "https://github.com/melikhov-dev/sandbox-lecture#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "isolated-vm": "^4.7.2",
+    "quickjs-emscripten": "^0.29.1",
+    "vm2": "^3.9.19"
+  }
+}
