@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.send(template({result: '', code: '// result = 1', sandboxType: 'eval'}));
+    res.send(template({result: '', code: '', sandboxType: 'eval'}));
 })
 
 app.post('/', async (req, res) => {

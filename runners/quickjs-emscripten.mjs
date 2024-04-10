@@ -16,11 +16,13 @@ export const quickjsRunner = async (code) => {
         
         vm.setProp(consoleHandle, "log", logHandle)
         vm.setProp(vm.global, "console", consoleHandle)
+
         consoleHandle.dispose()
         logHandle.dispose()
         
         const result = vm.unwrapResult(vm.evalCode(code))
-        const returnValue = vm.getString(result);
+        
+        const returnValue = vm.dump(result);
 
         result.dispose()
         return returnValue;
